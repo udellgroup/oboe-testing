@@ -12,7 +12,7 @@ import sys
 import os
 
 #The condition for selecting OpenML datasets
-condition = "(openml_datasets.NumberOfInstances < 10000) & (openml_datasets.NumberOfInstances >= 150) & (openml_datasets.NumberOfMissingValues == 0) & (openml_datasets.NumberOfClasses < 0)"
+condition = "(openml_datasets.NumberOfInstances < 10000) & (openml_datasets.NumberOfInstances >= 150) & (openml_datasets.NumberOfMissingValues == 0) & (openml_datasets.NumberOfClasses > 0)"
 #This should be the filename without extension
 filename = 'selected_OpenML_classification_dataset_indices'
 
